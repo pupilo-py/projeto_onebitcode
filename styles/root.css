@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --header-color: #FF9A6C;
+    --header-text-color: #FFFFFF;
+    --header-link-color: var(--header-text-color);
+    --header-menu-hamburger-color: var(--header-color);
+    --header-menu-hamburger-border-color: #FF725E;
+    --header-menu-hamburger-color-hover: var(--header-menu-hamburger-border-color);
+    --main-text-color: #263138;
+    --main-button-color: var(--header-menu-hamburger-border-color);
+    --main-button-text-color: var(--header-text-color);
+    --main-link-color: var(--header-menu-hamburger-border-color);
+    --main-border-color: var(--header-menu-hamburger-border-color);
+    --footer-color: #ff986c40;
+    --footer-text-color: var(--main-text-color);
+    --footer-link-color: var(--main-text-color);
+    --footer-copyright-color: var(--main-text-color);
+    --footer-copyright-text-color: var(--header-text-color);
+    --footer-copyright-link-color: var(--header-menu-hamburger-border-color);
+    --primary-font: 'Montserrat', sans-serif;
+}
