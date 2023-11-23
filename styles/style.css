@@ -26,90 +26,25 @@ header #menu #toggle {
 }
 
 header #menu .menu-btn {
-    display: block;
-    cursor: pointer;
-    text-transform: uppercase;
+    display: none;
 }
 
 header #menu #nav-list {
-    display: none;
+    display: flex;
     list-style: none;
-    flex-direction: column;
-    position: absolute;
-    top: 47px;
-    left: 0;
-    width: 100%;
-}
-
-header #menu #nav-list li {
-    background-color: var(--header-menu-hamburger-color);
-    border-bottom: 1px solid var(--header-menu-hamburger-border-color);
-    transition: 0.3s ease-in-out;
 }
 
 header #menu #nav-list li a {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: 16px 10px;
     color: var(--header-link-color);
     text-decoration: none;
-    padding: 10px 10px 10px 36px;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-}
-
-header #menu #nav-list li:nth-child(1) a {
-    background-image: url(../images/start-icon.png);
-}
-
-header #menu #nav-list li:nth-child(2) a {
-    background-image: url(../images/clinic-icon.png);
-}
-
-header #menu #nav-list li:nth-child(3) a {
-    background-image: url(../images/drugstore-icon.png);
-}
-
-header #menu #nav-list li:nth-child(4) a {
-    background-image: url(../images/faq-icon.png);
-}
-
-header #menu #nav-list li:hover {
-    background-color: var(--header-menu-hamburger-border-color);
+    margin: 10px;
 }
 
 header #menu #nav-list li:hover a {
-    background-size: 18px;
-    padding-left: 38px;
-    font-size: 1.1em;
+    text-decoration: underline;
 }
 
-header #menu #toggle:checked + .menu-btn + #nav-list {
-    display: flex;
-}
 
-header #menu .menu-btn::before {
-    content: "\2630";
-}
-
-header #menu #toggle:checked + .menu-btn::before {
-    content: "\2716";
-    vertical-align: 1px;
-}
-
-main {
-    margin: 0 10px;
-    text-align: justify;
-}
-
-main .text h1 {
-    margin: 20px 0;
-}
-
-main .text p {
-    margin-bottom: 20px;
-}
 
 main .button {
     display: block;
@@ -127,15 +62,103 @@ main .button.filled {
     text-decoration: none;
 }
 
-main #start img#waves {
-    display: none;
-}
 
 
 main ul {
     list-style-position: inside;
 }
 
-img {
-    width: 100%
+@media (max-width: 580px) {
+    header #menu .menu-btn {
+        display: block;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    header #menu #nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        width: 100%;
+    }
+    
+    header #menu #nav-list li {
+        background-color: var(--header-menu-hamburger-color);
+        border-bottom: 1px solid var(--header-menu-hamburger-border-color);
+        transition: 0.3s ease-in-out;
+    }
+    
+    header #menu #nav-list li a {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: 16px 10px;
+        color: var(--header-link-color);
+        text-decoration: none;
+        padding: 10px 10px 10px 36px;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+    }
+    
+    header #menu #nav-list li:nth-child(1) a {
+        background-image: url(../images/start-icon.png);
+    }
+    
+    header #menu #nav-list li:nth-child(2) a {
+        background-image: url(../images/clinic-icon.png);
+    }
+    
+    header #menu #nav-list li:nth-child(3) a {
+        background-image: url(../images/drugstore-icon.png);
+    }
+    
+    header #menu #nav-list li:nth-child(4) a {
+        background-image: url(../images/faq-icon.png);
+    }
+    
+    header #menu #nav-list li:hover {
+        background-color: var(--header-menu-hamburger-border-color);
+    }
+    
+    header #menu #nav-list li:hover a {
+        background-size: 18px;
+        padding-left: 38px;
+        font-size: 1.1em;
+    }
+    
+    header #menu #toggle:checked + .menu-btn + #nav-list {
+        display: flex;
+    }
+    
+    header #menu .menu-btn::before {
+        content: "\2630";
+    }
+    
+    header #menu #toggle:checked + .menu-btn::before {
+        content: "\2716";
+        vertical-align: 1px;
+    }
+
+    main {
+        margin: 0 10px;
+        text-align: justify;
+    }
+
+    main section img {
+        width: 100%;
+    }
+    
+    main .text h1 {
+        margin: 20px 0;
+    }
+    
+    main .text p {
+        margin-bottom: 20px;
+    }
+
+    main #start img#waves {
+        display: none;
+    }
 }
